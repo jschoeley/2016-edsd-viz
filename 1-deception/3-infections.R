@@ -21,7 +21,7 @@ cod %>%
   mutate(age_start = c(0, 1, seq(5, 100, 5)),
          age_width = c(diff(age_start), 5)) -> infect
 
-# Lexis surface -----------------------------------------------------------
+# Which color scale is "correct"? -----------------------------------------
 
 ggplot(infect) +
   geom_tile(aes(x = year, width = 1,
